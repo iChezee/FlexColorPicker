@@ -29,7 +29,7 @@
 import UIKit
 
 /// Circular palette color control that allows to change both hue and saturation of current color by selecting a point on the palette.
-public class RadialPaletteControl: ColorPaletteControl {
+open class RadialPaletteControl: ColorPaletteControl {
     public override func commonInit() {
         paletteDelegate = RadialHSBPaletteDelegate()
         super.commonInit()
@@ -37,7 +37,7 @@ public class RadialPaletteControl: ColorPaletteControl {
 }
 
 /// Rectangle shaped palette color control that allows to change both hue and saturation of current color by selecting a point on the palette.
-public class RectangularPaletteControl: ColorPaletteControl {
+open class RectangularPaletteControl: ColorPaletteControl {
     public override func commonInit() {
         paletteDelegate = RectangularHSBPaletteDelegate()
         updateBorder(visible: borderOn, view: contentView)
